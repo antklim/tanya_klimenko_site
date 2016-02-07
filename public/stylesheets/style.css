@@ -1,0 +1,121 @@
+/* General style settings
+   ========================================================================== */
+
+/**
+ * Boxes
+ */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+ * Clearfix
+ */
+
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+.container {
+  clear: both;
+  *zoom: 1;
+}
+
+/**
+ * Anchor settings
+ */
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+/* Site's elements and classes
+   ========================================================================== */
+
+/**
+ * Body and main layout
+ */
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.layout {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/**
+ * Left pane
+ */
+
+.left-pane {
+  float: left;
+  margin: 0 1.5%;
+  width: 20%;
+}
+
+.logo {
+  background: url("../images/logo.jpg") no-repeat;
+  width: 100%;
+  height: 150px;
+}
+
+/**
+ * Content section
+ */
+
+.main {
+  float: left;
+  margin: 0 1.5%;
+  width: 73%
+}
+
+.ping-pong {
+  background: url("../images/ping-pong.jpg") no-repeat;
+  width: 100%;
+  height: 460px;
+}
+
+.contacts {
+  padding-left: 75px;
+  width: 240px;
+}
+
+.contacts-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  height: 50px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.behance {
+  background: url("../images/button-behance.jpg") no-repeat;
+}
+
+.gmail {
+  background: url("../images/button-gmail.jpg") no-repeat;
+}
+
+.instagram {
+  background: url("../images/button-instagram.jpg") no-repeat;
+}
+
+.facebook {
+  background: url("../images/button-facebook.jpg") no-repeat;
+}
